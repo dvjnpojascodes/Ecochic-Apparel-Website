@@ -2,3 +2,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.input {
+    @apply font-content bg-transparent border-0 border-b-2 border-solid border-b-gray-300 w-72 py-2 px-1 mb-3 leading-tight focus:outline-none;
+}
