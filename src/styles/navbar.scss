@@ -1,0 +1,109 @@
+// COLOR PALETTE
+$primary: #325219;
+$accent: #B67E34;
+
+// FONTS
+$title: 'Libre Bodoni', serif;
+$content: 'Laila', sans-serif;
+
+
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+nav{
+  width: 100%;
+
+  @media (max-width: 1120px){ background-image: linear-gradient(to right, $primary 50%, $primary 50%)}
+
+  label.logo{
+    color: white;
+    font-size: 25px;
+    line-height: 80px;
+    padding: 0 30px;
+    font-weight: bold;
+    font-family: $title;
+
+    @media (max-width: 1120px){
+      font-size: 20px;
+      padding-left: 50px;
+    }
+    @media (max-width: 480px){ font-size: 18px; padding: 0 10px;}
+  }
+
+  ul{
+    float: right;
+    margin-right: 20px;
+
+    @media (max-width: 1120px){
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: $primary;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+      z-index: 2;
+    }
+
+    li{
+      display: inline-block;
+      line-height: 80px;
+      margin: 0 5px;
+
+      @media (max-width: 1120px){
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+      }
+
+      a{
+        color: white;
+        font-size: 16px;
+        font-family: $title;
+        font-weight: 400;
+        padding: 7px 13px;
+        border-radius: 3px;
+        text-transform: uppercase;
+
+        &:hover{
+          color: $accent;
+          transition: .5s ease-out;
+
+        }
+      }
+
+      #login {font-weight: 600;}
+    }
+  }
+}
+
+.checkbtn{
+  font-size: 25px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+
+  @media (max-width: 1120px){
+    display: block;
+  }
+  @media (max-width: 480px){ margin-right: 20px;}
+}
+
+#check{
+  display: none;
+
+  &:checked ~ul {
+    @media (max-width: 1120px){
+      left: 0;
+    }
+  }
+}
