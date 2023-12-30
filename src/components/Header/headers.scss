@@ -1,0 +1,214 @@
+$primary: #325219;
+$accent: #B67E34;
+$text: #fff;
+
+$title: 'Libre Bodoni', serif;
+$content:  'Laila', sans-serif;
+ 
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+nav{ 
+  background-image: linear-gradient(to right, $accent 50.01%, $primary 50%);
+  @media (min-width: 1200px){overflow-y: hidden;} 
+}
+
+.header{
+  height: 89vh;
+  width: 100%;
+  display: flex;
+  // overflow: hidden;
+  position: relative;
+
+  @media (max-width: 1120px){ flex-wrap: wrap;}
+
+  img {
+    position: absolute;
+    bottom: 0;
+    left: 32%;
+
+    @media (max-width: 1300px){ left: 28%;}
+    @media (max-width: 1255px){ width: 32%; left: 29%;}
+    @media (max-width: 1120px){ display: none;}
+  }
+  
+  .left {
+    background-color: $accent;
+    width: 50%;
+
+    @media (max-width: 1120px){ 
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+    }
+
+    h1 {
+      color: $text;
+      font: italic 3em $title;
+      letter-spacing: 3px;
+      width: 80%;
+      margin-top: 2em;
+      position: relative;
+      left: 30px;
+
+      @media (max-width: 1120px){ width: 100%; left: 0; margin-top: 1.5em;}
+      @media (max-width: 580px){ font-size: 2em;}
+      @media (max-width: 480px){ font-size: 1.5em; padding: 0 0.2em; } 
+    }
+
+    #desc {
+      color: $text;
+      width: 70%;
+      margin: 2em 0 0 2em;
+      font: 1em $content;
+      line-height: 2em;
+
+      @media (max-width: 1120px){ width: 100%; padding: 0 5em; margin-left: 0;}
+      @media (max-width: 580px){ font-size: 0.8em; padding: 0 2em} 
+    }
+
+    .button {
+      margin: 20px 0 0 30px;
+      display: inline-block;
+      padding: .75rem 1.25rem;
+      border-radius: 10rem;
+      color: #fff;
+      text-transform: uppercase;
+      font: 0.9em $content;
+      letter-spacing: .15rem;
+      transition: all .3s;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      text-decoration: none;
+
+      @media (max-width: 1120px){ margin-left: 0;}
+      @media (max-width: 580px){ font-size: 0.8em;}
+
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 20%;
+        height: 100%;
+        background-color: $primary;
+        border-radius: 10rem;
+        z-index: -2;
+      }
+      &:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background-color: darken($primary, 8%);
+        transition: all .3s;
+        border-radius: 10rem;
+        z-index: -1;
+      }
+
+      &:hover {
+        color: #fff;
+        &:before {
+          width: 100%;
+        }
+      }
+    }
+
+    .socmed {
+      position: relative;
+      left: 1em;
+      margin-top: 8em;
+
+      @media (max-width: 1120px){left: 0; margin-top: 4em; margin-bottom: 3em;}
+      @media (max-width: 300px){ margin-top: 3em; } 
+
+      .fa-brands {
+        color: $text;
+        padding: 0 0.6em;
+        font-size: 1.5em;
+
+        &:hover{color: $accent}
+
+        @media (max-width: 300px){font-size: 1em; } 
+      }
+    }
+
+    .fa-brands {
+        color: $text;
+        font-size: 3em;
+    }
+
+  }
+  
+  
+  .right {
+    background-color: $primary;
+    width: 50%;
+    
+    @media (max-width: 1120px){ 
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+    }
+
+    .content{
+      padding-left: 11em;
+      margin-top: 12em;
+
+      @media (max-width: 1290px){padding-left: 9em; margin-top: 10em;}
+      @media (max-width: 1120px){padding-left: 0}
+      @media (max-width: 580px){ margin-top: 5em;}
+
+    }
+
+    h1 {
+      color: $text;
+      font: italic 2em $title;
+      letter-spacing: 3px;
+      margin-top: 2em;
+      position: relative;
+
+      @media (max-width: 1120px){ width: 100%; left: 0; margin-top: 0.5em;}
+      @media (max-width: 580px){ font-size: 2em;}
+      @media (max-width: 480px){ font-size: 1.5em; padding: 0 0.2em; } 
+    }
+
+    #desc {
+      color: $text;
+      margin: 2em 2em 0 0;
+      font: 1em $content;
+      line-height: 2em;
+
+      @media (max-width: 1120px){ width: 100%; padding: 0 5em; margin: 2em 0 4em 0;}
+      @media (max-width: 580px){ font-size: 0.8em; padding: 0 2em} 
+    }
+  }
+
+  .location {
+    display: flex;
+    font: $title;
+    color: $text;
+    margin-left: 15em;
+    padding-top: 5em;
+
+    @media (max-width: 1120px){
+      margin: 0 0 5em 0; 
+      padding-top: 2em;
+      text-align: start;
+      justify-content: center;
+    }
+
+    @media (max-width: 580px){ font-size: 0.8em;} 
+
+    .icon {padding-right: 1em;}
+    span{font-weight: bold;}
+  }
+}

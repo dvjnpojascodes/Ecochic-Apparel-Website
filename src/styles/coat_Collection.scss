@@ -1,0 +1,36 @@
+.coop { background-image: url('/src/Assets/CO-ORD/Coord\ Header.jpeg');}
+
+.coat {background-image: url('/src/Assets/Coats/Collection\ 1-1.jpg');}
+
+.pants {background-image: url('/src/Assets/Pants_Shorts/Pants.jpg');}
+
+.dressPage {
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), 
+    url('/src/Assets/Top-Dress/top\ header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 40em;
+    background-color: azure;
+
+    @media (max-width: 1024px){ height: 30em;}
+    @media (max-width: 768px){ height: 20em;}
+    @media (max-width: 640px){ height: 15em;}
+}
+
+.card {
+    height: 28em;
+    background-size: cover;
+    background-position: center;
+
+    @media (max-width: 1300px){ height: 30em;}
+    @media (max-width: 640px){ height: 20em;}
+    .text {
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+}
