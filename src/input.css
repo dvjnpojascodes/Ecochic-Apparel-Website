@@ -1,8 +1,0 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Laila:wght@300;400;500&family=Libre+Bodoni:wght@400;500;600&display=swap');
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-.input {
-    @apply font-content bg-transparent border-0 border-b-2 border-solid border-b-gray-300 w-72 py-2 px-1 mb-3 leading-tight focus:outline-none;
-}
