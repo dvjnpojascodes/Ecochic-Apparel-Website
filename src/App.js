@@ -13,8 +13,8 @@ import AboutUs from './pages/About';
 import Cart from './pages/Cart';
 import Contact from './pages/Contact';
 import Login from './pages/Login';
+import Signup from './pages/SignUp';
 import Product from './pages/product';
-import Signup from './pages/SignUp'
 
 function App() {
   return (
@@ -24,6 +24,7 @@ function App() {
 
       <Routes>
         <Route path='/' element={<Header/>} />
+        <Route path='/Ecochic-Apparel-Website' element={<Header/>} />
         <Route path='/collection' element={<Collection/>}/>
         {/* <Route path='/coords' element={<ShopCategory banner={coord_banner} category="coord"/>} /> */}
         <Route path='/coat' element={<Coats/>}/>
