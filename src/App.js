@@ -24,6 +24,7 @@ function App() {
 
       <Routes>
         <Route path='/' element={<Header/>} />
+        <Route path='/Ecochic-Apparel-Websit' element={<Header/>} />
         <Route path='/collection' element={<Collection/>}/>
         {/* <Route path='/coords' element={<ShopCategory banner={coord_banner} category="coord"/>} /> */}
         <Route path='/coat' element={<Coats/>}/>
