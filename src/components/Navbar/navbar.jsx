@@ -34,7 +34,7 @@ export default function Navbar(props){
   
     
     return (
-        <nav style={{ background: getNavbarColor() }} className='flex justify-between'>
+        <nav style={{ background: getNavbarColor() }} className='flex justify-between px-[1.2em] md:flex-row flex-row-reverse'>
         <input type="checkbox" id="check" />
         <label htmlFor="check" className="checkbtn">
           <FontAwesomeIcon icon="fa-solid fa-bars" />
