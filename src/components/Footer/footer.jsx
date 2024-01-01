@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from "react";
+import logo from '../Assets/Logo.png';
 
 
 export default function Footer() {
@@ -10,7 +11,7 @@ export default function Footer() {
             <div class="container mx-auto pt-8 pb-4 px-4 lg:px-8 flex flex-wrap justify-evenly gap-3 lg:gap-10">
                 {/* <!-- Logo Column --> */}
                 <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 mb-4 mr-10">
-                     <h1 className="text-lg sm:text-2xl">ECOCHIC APPAREL</h1> 
+                        <a href="/"> <img src={logo} className="w-[180px] lg:h-[70px] h-[55px] cursor-pointer" alt="" /> </a>
 
                      <p className="font-content  text-xs lg:text-sm text-justify font-extralight mt-4 "> Ecochic transforms plastic bottles into stylish, eco-friendly clothing while promoting ethical and sustainable practices that contribute to a greener, cleaner future. </p>
                 </div>

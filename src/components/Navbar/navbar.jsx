@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useContext, useState } from "react";
 import { Link } from 'react-router-dom';
 import { ShopContext } from '../../context/ShopContext';
-import logo from '../Assets/logo.png';
+import logo from '../Assets/Logo.png';
 import './navbar.css';
 
 export default function Navbar(props){
@@ -40,7 +40,7 @@ export default function Navbar(props){
           <FontAwesomeIcon icon="fa-solid fa-bars" />
         </label>
         
-        <a href="/"> <img src={logo} className="w-[180px] h-[40px] cursor-pointer" alt="" /> </a>
+        <a href="/"> <img src={logo} className="w-[180px] h-[60px] cursor-pointer" alt="" /> </a>
         
         <ul className='flex list-none text-white space-x-4 font-content justify-around'> 
           <li onClick={() => {setMenu("home")}} style={{color: menu === "home" ? "#B67E34" : "#ffffff"}}> <Link to='/'> Home </Link> </li>
