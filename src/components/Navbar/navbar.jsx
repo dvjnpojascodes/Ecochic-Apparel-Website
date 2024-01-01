@@ -34,13 +34,13 @@ export default function Navbar(props){
   
     
     return (
-        <nav style={{ background: getNavbarColor() }}>
+        <nav style={{ background: getNavbarColor() }} className='flex justify-between'>
         <input type="checkbox" id="check" />
         <label htmlFor="check" className="checkbtn">
           <FontAwesomeIcon icon="fa-solid fa-bars" />
         </label>
         
-        <a href="/"> <img src={logo} className="w-[180px] h-[60px] cursor-pointer" alt="" /> </a>
+        <a href="/"> <img src={logo} className="w-[180px] h-[60px] cursor-pointer" alt="ecochic apparel logo" /> </a>
         
         <ul className='flex list-none text-white space-x-4 font-content justify-around'> 
           <li onClick={() => {setMenu("home")}} style={{color: menu === "home" ? "#B67E34" : "#ffffff"}}> <Link to='/'> Home </Link> </li>
