@@ -22,7 +22,7 @@ export default function Footer() {
                     <ul className='font-content font-extralight text-xs lg:text-sm'>
                         <li className='pb-2'><a href="/" className='hover:text-gray-400'>Home</a></li>
                         <li className='pb-2'><a href="/collection" className='hover:text-gray-400'>Collections</a></li>
-                        <li className='pb-2'><a href="/about" className='hover:text-gray-400'>About Us</a></li>
+                        <li className='pb-2'><a href="/aboutUs" className='hover:text-gray-400'>About Us</a></li>
                         <li className='pb-2'><a href="/" className='hover:text-gray-400'> Terms & Condition </a></li>
                         <li className='pb-2'><a href="/" className='hover:text-gray-400'> Privacy Policy </a></li>
                     </ul>
