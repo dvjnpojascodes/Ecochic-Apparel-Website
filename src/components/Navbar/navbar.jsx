@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useContext, useState } from "react";
 import { Link } from 'react-router-dom';
 import { ShopContext } from '../../context/ShopContext';
-import logo from '../Assets/logo.jpg';
+import logo from '../Assets/logo.png';
 import './navbar.css';
 
 export default function Navbar(props){
