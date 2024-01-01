@@ -40,7 +40,7 @@ export default function Navbar(props){
           <FontAwesomeIcon icon="fa-solid fa-bars" />
         </label>
         
-        <a href="/"> <img src={logo} className="w-[180px] h-[60px] cursor-pointer" alt="ecochic apparel logo" /> </a>
+        <a href="/"> <img src={logo} className="md:w-[180px] md:h-[60px] w-[150px] h-[40px] pt-1 cursor-pointer" alt="ecochic apparel logo" /> </a>
         
         <ul className='flex list-none text-white space-x-4 font-content justify-around'> 
           <li onClick={() => {setMenu("home")}} style={{color: menu === "home" ? "#B67E34" : "#ffffff"}}> <Link to='/'> Home </Link> </li>
