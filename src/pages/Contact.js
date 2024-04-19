@@ -6,7 +6,7 @@ export default function Contact() {
         <>
             <div className="w-full grid lg:grid-cols-2 bg-accent text-white overflow-hidden">
                 {/* <!-- contact form --> */}
-                <div className="w-full px-20 pb-24 md:max-w-full mx-auto">
+                <div className="w-full px-20 pb-36 md:max-w-full mx-auto">
                     <h2 className="text-2xl lg:text-4xl font-title mt-10 mb-10 text-center lg:text-start tracking-wider">CONTACT US</h2>
         
                     <form method="POST" action="#" className="text-center lg:text-start">
